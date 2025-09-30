@@ -1,0 +1,64 @@
+---
+import { Image } from 'astro:assets'
+import { getCollection } from 'astro:content'
+
+const items = await getCollection('items')
+const enabledItems = items.filter((item) => item.data.enabled)
+---
+
+<div
+  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2"
+>
+  {
+    enabledItems.reverse().map((item) => (
+      <a
+        href={`/${item.id}`}
+        class="group transition-all  md:block shadow-lg px-2 py-2 rounded-xl bg-white flex gap-4"
+      >
+        {item.data.image ? (
+          <Image
+            src={item.data.image}
+            alt={item.data.name}
+            width={480}
+            height={270}
+          style={{
+            viewTransitionName: `image-transition-${item.id}`,
+          }}
+          class:list={[
+            'rounded-lg transition-all',
+            'group-hover:shadow-lg group-hover:opacity-90',
+            'md:h-[300px] md:w-full ',
+            'w-1/2 h-[150px] object-cover object-center  ',
+
+          ]}
+        />
+        ) : (
+          <div
+            class="rounded-lg transition-all group-hover:shadow-lg group-hover:opacity-90 md:h-[300px] md:w-full w-1/2 h-[150px] object-cover object-center"
+          >
+            <div class="flex items-center justify-center h-full w-full">
+              <span class="text-gray-500">No image available</span>
+            </div>
+          </div>
+        )}
+        <div class="md:mt-4 md:text-center text-neutral-700 relative flex flex-col  justify-center text-left">
+          {item.data.interested.length > 0 && (
+            <div class="mt-2 text-sm text-yellow-500 font-semibold absolute top-0 right-0">
+              🔥
+            </div>
+          )}
+          <strong class="font-normal text-red-400">{item.data.name}</strong>
+          <p class="text-sm text-neutral-500">{item.data.description}</p>
+          <p class="mt-2 text-sm font-bold text-neutral-800 ">
+            ${item.data.price }
+          </p>
+
+          {/* Mostrar "Vendido" si el producto está vendido */}
+          {!item.data.enabled && (
+            <div class="mt-2 text-sm text-red-600 font-semibold">Vendido</div>
+          )}
+        </div>
+      </a>
+    ))
+  }
+</div>
