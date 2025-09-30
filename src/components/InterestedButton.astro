@@ -1,18 +1,18 @@
 ---
+import Whatsapp from '@/assets/whatsapp.svg'
 import { Button } from '@/components/ui/button'
 import { Image } from 'astro:assets'
-import Whatsapp from '@/assets/whatsapp.svg'
 
 const { item } = Astro.props
 ---
 
 <a
-  href=`https://api.whatsapp.com/send/?phone=5491134908167&text=Hola, me interesa este producto: ${item.data.name}`
+  href={`https://api.whatsapp.com/send/?phone=447459053603&text=Hello, I am interested in this item: ${item.data.name}`}
   target="_blank"
   rel="noopener noreferrer"
 >
   <Button size="lg">
     <Image src={Whatsapp} alt="Whatsapp" width={20} height={20} />
-    <span class="text-[18px]"> Me interesa </span>
+    <span class="text-[18px]"> I'm Interested </span>
   </Button>
 </a>
