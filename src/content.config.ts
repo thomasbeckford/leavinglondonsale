@@ -15,12 +15,4 @@ const items = defineCollection({
     }),
 })
 
-const details = defineCollection({
-  loader: file('src/content/details/details.json'),
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-  }),
-})
-
-export const collections = { items, details }
+export const collections = { items }
