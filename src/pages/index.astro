@@ -1,6 +1,9 @@
 ---
-import Items from '@/components/Items.astro'
-import BaseLayout from '@/layouts/BaseLayout.astro'
+import londonImage from '@/assets/london.jpg'; // o la ruta correcta a tu imagen
+import Items from '@/components/Items.astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+
 ---
 
 <BaseLayout title="Leaving London Sale" description="Leaving London Sale">
@@ -9,10 +12,13 @@ import BaseLayout from '@/layouts/BaseLayout.astro'
     <div class="relative overflow-hidden rounded-2xl  shadow-xl mb-10">
       <!-- Patrón de fondo sutil -->
       <div class="absolute inset-0 opacity-20">
-        <div class="absolute inset-0" style={{
-          background: 'url(/london.jpg) no-repeat center center',
-          backgroundSize: 'cover',
-        }}></div>
+        <Image
+          src={londonImage}
+          alt="London background"
+          class="absolute inset-0 w-full h-full object-cover"
+          loading="eager"
+          quality={80}
+        />
       </div>
       
       <div class="relative px-6 py-12 md:py-16">
