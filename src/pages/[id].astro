@@ -39,7 +39,7 @@ const { item } = Astro.props
       <p
         class="text-lg sm:text-xl lg:text-2xl font-bold text-gray-600 max-w-3xl text-center mb-8"
       >
-        ${(item.data.price / 1000).toFixed(3)}
+        ${item.data.price}
       </p>
 
       <div>
@@ -47,20 +47,34 @@ const { item } = Astro.props
       </div>
     </div>
     
-    {item.data.image ? (
-      <Image
-        style={{
-          viewTransitionName: `image-transition-${item.id}`,
-        }}
-        src={item.data.image}
-        alt={`Image ${item.data.name}`}
-        width={480}
-        height={270}
-        class="object-contain rounded-xl"
-        aria-placeholder={`Image ${item.data.name}`}
-      />
+    {item.data.image && item.data.image.length > 0 ? (
+      <div class="w-full max-w-[640px] relative">
+        <div class="swiper-detail rounded-xl overflow-hidden shadow-lg">
+          <div class="swiper-wrapper">
+            {item.data.image.map((img, idx) => (
+              <div class="swiper-slide self-center">
+                <Image
+                  src={img}
+                  alt={`${item.data.name} - Image ${idx + 1}`}
+                  width={640}
+                  height={480}
+                  class="w-full h-auto object-contain"
+                  style={idx === 0 ? { viewTransitionName: `image-transition-${item.id}` } : {}}
+                />
+              </div>
+            ))}
+          </div>
+          {item.data.image.length > 1 && (
+            <>
+              <div class="swiper-button-prev swiper-button-prev-detail"></div>
+              <div class="swiper-button-next swiper-button-next-detail"></div>
+              <div class="swiper-pagination swiper-pagination-detail"></div>
+            </>
+          )}
+        </div>
+      </div>
     ) : (
-      <div class="w-full max-w-[480px] h-[270px] rounded-xl bg-gray-100 flex items-center justify-center">
+      <div class="w-full max-w-[640px] h-[480px] rounded-xl bg-gray-100 flex items-center justify-center">
         <span class="text-gray-500">No image available</span>
       </div>
     )}
@@ -68,3 +82,57 @@ const { item } = Astro.props
     <BackButton client:load />
   </div>
 </BaseLayout>
+
+<script>
+  import Swiper from 'swiper'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import { Navigation, Pagination } from 'swiper/modules'
+
+  let swiperInstance: Swiper | null = null;
+
+  function initSwiper() {
+    // Destruir instancia anterior
+    if (swiperInstance) {
+      swiperInstance.destroy(true, true);
+    }
+
+    // Crear nueva instancia
+    const swiperEl = document.querySelector('.swiper-detail');
+    if (swiperEl) {
+      swiperInstance = new Swiper('.swiper-detail', {
+        modules: [Navigation, Pagination],
+        loop: true,
+        pagination: { 
+          el: '.swiper-pagination-detail', 
+          clickable: true,
+          dynamicBullets: true
+        },
+        navigation: { 
+          nextEl: '.swiper-button-next-detail', 
+          prevEl: '.swiper-button-prev-detail' 
+        },
+      });
+    }
+  }
+
+  // Inicializar
+  initSwiper();
+
+  // Reinicializar después de cada navegación
+  document.addEventListener('astro:page-load', () => {
+    initSwiper();
+  });
+</script>
+
+<style>
+  .swiper-button-prev-detail, 
+  .swiper-button-next-detail {
+    color: #f87171 !important;
+  }
+  
+  .swiper-pagination-detail {
+    bottom: 16px !important;
+  }
+</style>

@@ -1,5 +1,5 @@
-import { z, defineCollection } from 'astro:content'
 import { file } from 'astro/loaders'
+import { defineCollection, z } from 'astro:content'
 
 const items = defineCollection({
   loader: file('src/content/items/items.json'),
@@ -8,7 +8,7 @@ const items = defineCollection({
       name: z.string(),
       price: z.number(),
       description: z.string().nullable(),
-      image: image(),
+      image: image().array().optional(),
       enabled: z.boolean(),
       owner: z.string().nullable(),
       interested: z.array(z.string()),

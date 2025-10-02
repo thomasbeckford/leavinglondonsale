@@ -4,7 +4,7 @@
     "name": "TV Samsung TU7020 55\"",
     "price": 250,
     "description": "Crystal UHD 4K HDR Smart TV (2020) – 123.19 x 70.82 cm",
-    "image": "",
+    "image": ["/src/assets/items/tv.jpg"],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -14,7 +14,10 @@
     "name": "IKEA Shoe cabinet",
     "price": 40,
     "description": "Shoe cabinet with 3 compartments, white – 61x30x130cm",
-    "image": "",
+    "image": [
+      "/src/assets/items/shoe_cabinet.jpg",
+      "/src/assets/items/shoe_cabinet_1.jpg"
+    ],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -24,7 +27,10 @@
     "name": "Bamboo Shoe rack",
     "price": 10,
     "description": "Natural Bamboo Shoe rack with 2 shelves and bench – 69x27x44.7 cm",
-    "image": "",
+    "image": [
+      "/src/assets/items/shoe_rack.jpg",
+      "/src/assets/items/shoe_rack_1.jpg"
+    ],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -34,7 +40,7 @@
     "name": "Baby Cot Anna - John Lewis",
     "price": 50,
     "description": "White cot with mattress, protector & sheet. H93.5cm x W124cm x D65cm. Mattress 120x60cm",
-    "image": "",
+    "image": ["/src/assets/items/cot.jpg"],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -44,7 +50,7 @@
     "name": "Tutti Bambini CoZee Next to Me Crib",
     "price": 75,
     "description": "Bedside crib with stand, foldable, 6 height levels, mattress + 2 sheets, Oak & Charcoal",
-    "image": "",
+    "image": ["/src/assets/items/next_to_me_cot.jpg"],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -54,7 +60,11 @@
     "name": "IKEA MALM Single Bed + 2 mattresses",
     "price": 150,
     "description": "Bed 199x107cm, mattress 190x90cm, headboard 100cm",
-    "image": "",
+    "image": [
+      "/src/assets/items/bed_single.jpg",
+      "/src/assets/items/bed_single_1.jpg",
+      "/src/assets/items/bed_single_2.jpg"
+    ],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -64,7 +74,11 @@
     "name": "IKEA BRIMNES Double Bed + John Lewis Mattress",
     "price": 200,
     "description": "Bed frame with storage (196x141x47cm) + Classic Collection 1200 Pocket Spring Mattress (Firm, 190x135cm)",
-    "image": "",
+    "image": [
+      "/src/assets/items/double_bed.jpg",
+      "/src/assets/items/double_bed_1.jpg",
+      "/src/assets/items/double_bed_2.jpg"
+    ],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -74,7 +88,11 @@
     "name": "Bike accessories set",
     "price": 150,
     "description": "Team Obsidian XL bike cover, 1 gold Hiplok chain, 2 silver Hiplok chains, Kryptonite U lock, 3 helmets (2 adult + 1 toddler)",
-    "image": "",
+    "image": [
+      "/src/assets/items/bike_tools.jpg",
+      "/src/assets/items/bike_tools_1.jpg",
+      "/src/assets/items/bike_tools_2.jpg"
+    ],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -84,7 +102,7 @@
     "name": "Toddler bike seat + rack",
     "price": 50,
     "description": "Bike seat + rack",
-    "image": "",
+    "image": ["/src/assets/items/toddler_bike_seat.jpg"],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -94,7 +112,11 @@
     "name": "Bike repair stand",
     "price": 20,
     "description": "Foldable bike repair stand with front wheel stabilizer – 108/190 cm height",
-    "image": "",
+    "image": [
+      "/src/assets/items/bike_rack.jpg",
+      "/src/assets/items/bike_rack_1.jpg",
+      "/src/assets/items/bike_rack_2.jpg"
+    ],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -104,7 +126,27 @@
     "name": "Trek One Series 1.1 Bike",
     "price": 70,
     "description": "Aluminium/carbon road bike 50cm – for riders 157-164 cm",
-    "image": "",
+    "image": ["/src/assets/items/bike.jpg"],
+    "enabled": true,
+    "owner": null,
+    "interested": []
+  },
+  {
+    "id": 111,
+    "name": "Joie Car Seat",
+    "price": 70,
+    "description": "",
+    "image": ["/src/assets/items/joie_car_seat.jpg"],
+    "enabled": true,
+    "owner": null,
+    "interested": []
+  },
+  {
+    "id": 112,
+    "name": "Maxi Cosi Baby Car Seat",
+    "price": 70,
+    "description": "",
+    "image": ["/src/assets/items/car_seat.jpg"],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -114,7 +156,7 @@
     "name": "Garden hose pipe",
     "price": 15,
     "description": "BABADU 100FT Expandable Garden Hose Pipe with 7 Function Spray Nozzle",
-    "image": "",
+    "image": ["/src/assets/items/garden_hose_pipe.jpg"],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -124,7 +166,10 @@
     "name": "Skip Hop Playmat",
     "price": 45,
     "description": "Reversible baby playmat – 132.08 x 218.44 cm",
-    "image": "",
+    "image": [
+      "/src/assets/items/baby_mat.jpg",
+      "/src/assets/items/baby_mat_1.jpg"
+    ],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -134,7 +179,7 @@
     "name": "Vax Mach Air Vacuum Cleaner",
     "price": 65,
     "description": "Upright vacuum cleaner, 820W, 1.5L, 31 x 30.5 x 110 cm, 4.9 kg, purple",
-    "image": "",
+    "image": ["/src/assets/items/vaccum_cleaner.jpg"],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -144,7 +189,10 @@
     "name": "IKEA LACK TV stand",
     "price": 10,
     "description": "Black-brown TV bench, 120x35x36 cm",
-    "image": "",
+    "image": [
+      "/src/assets/items/tv_stand.jpg",
+      "/src/assets/items/tv_stand_1.jpg"
+    ],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -154,7 +202,10 @@
     "name": "IKEA LACK Coffee table",
     "price": 0,
     "description": "Black-brown coffee table 90x55 cm – damaged",
-    "image": "",
+    "image": [
+      "/src/assets/items/coffee_table.jpg",
+      "/src/assets/items/coffee_table_1.jpg"
+    ],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -164,7 +215,12 @@
     "name": "Green Velvet Sofa",
     "price": 150,
     "description": "Large 3-seater sofa, W223 x D85 x H83 cm, with marks & stains, includes cushions",
-    "image": "",
+    "image": [
+      "/src/assets/items/sofa.jpg",
+      "/src/assets/items/sofa_1.jpg",
+      "/src/assets/items/sofa_2.jpg",
+      "/src/assets/items/sofa_3.jpg"
+    ],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -174,7 +230,7 @@
     "name": "IKEA ARÖD Floor lamp",
     "price": 20,
     "description": "Anthracite black floor/reading lamp, height 170 cm",
-    "image": "",
+    "image": ["/src/assets/items/standing_lamp.jpg"],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -184,7 +240,10 @@
     "name": "Parasol with base",
     "price": 25,
     "description": "Outsunny 2.6M Garden Parasol Umbrella + base",
-    "image": "",
+    "image": [
+      "/src/assets/items/parasol_with_base.jpg",
+      "/src/assets/items/parasol_with_base_1.jpg"
+    ],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -194,7 +253,11 @@
     "name": "IKEA Table + 6 chairs",
     "price": 100,
     "description": "NÄSINGE extendable table (130-190cm) with 6 chairs",
-    "image": "",
+    "image": [
+      "/src/assets/items/table_and_chairs.jpg",
+      "/src/assets/items/table_and_chairs_1.jpg",
+      "/src/assets/items/table_and_chairs_2.jpg"
+    ],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -204,7 +267,7 @@
     "name": "Boho Rug",
     "price": 25,
     "description": "Homcomodar Boho Rug Living Room 160x230cm Distressed Washable",
-    "image": "",
+    "image": ["/src/assets/items/carpet.jpg"],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -214,7 +277,10 @@
     "name": "Toddler climber slide",
     "price": 0,
     "description": "Plastic climber and slide for babies and toddlers, grey – 35x75x163cm",
-    "image": "",
+    "image": [
+      "/src/assets/items/climber_slide.jpg",
+      "/src/assets/items/climber_slide_1.jpg"
+    ],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -224,7 +290,10 @@
     "name": "LADIDA Baby Bouncer",
     "price": 0,
     "description": "Soft padded lamb bouncer, 0-6 months, soothing music & vibration",
-    "image": "",
+    "image": [
+      "/src/assets/items/bouncer.jpg",
+      "/src/assets/items/bouncer_1.jpg"
+    ],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -234,7 +303,11 @@
     "name": "Lifetime Picnic Table",
     "price": 100,
     "description": "Outdoor foldable table, seats 8, steel frame, all-weather finish",
-    "image": "",
+    "image": [
+      "/src/assets/items/outdoor_foldable_table.jpg",
+      "/src/assets/items/outdoor_foldable_table_1.jpg",
+      "/src/assets/items/outdoor_foldable_table_2.jpg"
+    ],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -244,7 +317,10 @@
     "name": "2 Bedside tables + 2 lamps",
     "price": 40,
     "description": "IKEA tray tables (45x53cm) + Industrial bedside lamps set of 2 (40.5cm height)",
-    "image": "",
+    "image": [
+      "/src/assets/items/two_bedside_tables.jpg",
+      "/src/assets/items/two_table_lamps.jpg"
+    ],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -254,7 +330,10 @@
     "name": "IKEA MALM Chest of drawers",
     "price": 30,
     "description": "Chest of 3 drawers, white – 80x78 cm",
-    "image": "",
+    "image": [
+      "/src/assets/items/chest_of_drawers.jpg",
+      "/src/assets/items/chest_of_drawers_1.jpg"
+    ],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -264,7 +343,7 @@
     "name": "Nappy bin",
     "price": 0,
     "description": "Vital Baby HYGIENE Odour-Trap Nappy Disposal System",
-    "image": "",
+    "image": ["/src/assets/items/nappy_bin.jpg"],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -274,7 +353,7 @@
     "name": "NB Baby Bath",
     "price": 0,
     "description": "Nuby Newborn Baby Bath with Anti-Slip Support & Plug",
-    "image": "",
+    "image": ["/src/assets/items/nb_bath.jpg"],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -284,7 +363,10 @@
     "name": "Fans (floor/desk)",
     "price": 0,
     "description": "Assorted fans",
-    "image": "",
+    "image": [
+      "/src/assets/items/floor_fan.jpg",
+      "/src/assets/items/desk_fan.jpg"
+    ],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -294,7 +376,7 @@
     "name": "Table lamp",
     "price": 0,
     "description": "Single table lamp",
-    "image": "",
+    "image": ["/src/assets/items/table_lamp.jpg"],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -304,7 +386,7 @@
     "name": "SONGMICS Shoe rack",
     "price": 0,
     "description": "10-Tier Metal Shoe Storage Organiser, 30 x 45 x 174 cm",
-    "image": "",
+    "image": ["/src/assets/items/show_rack_plastic.jpg"],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -314,7 +396,7 @@
     "name": "COSORI Air Fryer 4.7L",
     "price": 40,
     "description": "9-in-1 compact air fryer, 4 portions, 1500W",
-    "image": "",
+    "image": ["/src/assets/items/air_fryer.jpg"],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -324,7 +406,7 @@
     "name": "Breville Toaster",
     "price": 10,
     "description": "Breville Bold 2 Slice Toaster with High-Lift & Wide Slots",
-    "image": "",
+    "image": ["/src/assets/items/toaster.jpg"],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -334,7 +416,20 @@
     "name": "Bosch Kettle",
     "price": 15,
     "description": "Bosch DesignLine Plus Stainless Steel Kettle, 1.7L, 3000W",
-    "image": "",
+    "image": ["/src/assets/items/kettle.jpg"],
+    "enabled": true,
+    "owner": null,
+    "interested": []
+  },
+  {
+    "id": 341,
+    "name": "Iron + Stand",
+    "price": 15,
+    "description": "",
+    "image": [
+      "/src/assets/items/iron.jpg",
+      "/src/assets/items/ironing_board.jpg"
+    ],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -344,7 +439,7 @@
     "name": "Coffee machine",
     "price": 10,
     "description": "Bonsenkitchen Filter Coffee Machine, 1.5L, programmable",
-    "image": "",
+    "image": ["/src/assets/items/coffee_machine.jpg"],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -354,7 +449,7 @@
     "name": "Bialetti Moka Express",
     "price": 30,
     "description": "Aluminium Stovetop Coffee Maker (9 Cup), 420ml, Silver",
-    "image": "",
+    "image": ["/src/assets/items/coffee_maker.jpg"],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -364,7 +459,20 @@
     "name": "Tortilla Press",
     "price": 0,
     "description": "Royalford Mexican Style Tortilla & Taco Press, 18.5cm",
-    "image": "",
+    "image": ["/src/assets/items/tortilla_and_tacos.jpg"],
+    "enabled": true,
+    "owner": null,
+    "interested": []
+  },
+  {
+    "id": 371,
+    "name": "Foldable Table",
+    "price": 0,
+    "description": "",
+    "image": [
+      "/src/assets/items/foldable_desk.jpg",
+      "/src/assets/items/foldable_desk_1.jpg"
+    ],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -374,7 +482,7 @@
     "name": "Laundry rack",
     "price": 0,
     "description": "3 tier laundry rack, 52x48x130 cm",
-    "image": "",
+    "image": ["/src/assets/items/laundry_rack.jpg"],
     "enabled": true,
     "owner": null,
     "interested": []
@@ -384,7 +492,11 @@
     "name": "Doormats",
     "price": 0,
     "description": "3 pieces: black 40x60, brown 60x120, coir 60x90",
-    "image": "",
+    "image": [
+      "/src/assets/items/door_mats.jpg",
+      "/src/assets/items/door_mats_1.jpg",
+      "/src/assets/items/door_mats_2.jpg"
+    ],
     "enabled": true,
     "owner": null,
     "interested": []

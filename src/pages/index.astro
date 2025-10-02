@@ -3,21 +3,111 @@ import Items from '@/components/Items.astro'
 import BaseLayout from '@/layouts/BaseLayout.astro'
 ---
 
-<BaseLayout title="Moving Sale" description="We are leaving London and selling everything">
-  <main class="container mx-auto px-4 py-8">
-    <div class="flex flex-col items-center gap-0 text-center py-4 bg-slate-300 rounded-lg mb-2">
-      <h1 class="text-4xl font-bold">We are leaving London and selling everything</h1>
-      <h2 class="mt-4">
-        Click on the product to see more details and if you like it send a
-        message
-      </h2>
+<BaseLayout title="Moving Sale" description="Leaving London Sale">
+  <main class=" mx-auto px-4 py-8 ">
+    <!-- Hero Section -->
+    <div class="relative overflow-hidden rounded-2xl  shadow-xl mb-10">
+      <!-- Patrón de fondo sutil -->
+      <div class="absolute inset-0 opacity-30">
+        <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgba(251, 146, 60, 0.15) 1px, transparent 0); background-size: 40px 40px;"></div>
+      </div>
+      
+      <div class="relative px-6 py-12 md:py-16">
+        <div class="flex flex-col items-center text-center space-y-6">
+          <!-- Emoji animado -->
+          <div class="text-6xl md:text-7xl animate-bounce-slow">
+            🏠✈️
+          </div>
+          
+          <!-- Título principal -->
+          <div class="flex flex-col items-center gap-2">
+            <h1 class="text-4xl md:text-6xl font-bold h-24 bg-gradient-to-r from-orange-600 via-rose-600 to-pink-600 bg-clip-text text-transparent leading-tight">
+              Leaving London Sale
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 font-medium">
+              Pau & Pablo's New Adventure
+            </p>
+          </div>
 
-      <div class="text-2xl font-bold  px-10 py-6 rounded-lg">
-        <div>🔥🔥🔥🔥🔥🔥🔥</div>
-        <div>HURRY UP</div>
-        <div>🔥🔥🔥🔥🔥🔥🔥 </div>
+          <!-- Mensaje emotivo -->
+          <div class="max-w-2xl bg-white/70 backdrop-blur-sm rounded-xl p-6 shadow-md border border-orange-100">
+            <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+              We're starting a new chapter and saying goodbye to this amazing city. 
+              <span class="text-rose-600 font-semibold">We'll miss you all!</span> 
+              <br class="hidden md:block">
+              Click on any item to see details and send us a message.
+            </p>
+          </div>
+
+      
+
+          <!-- Info adicional -->
+          <div class="flex flex-wrap items-center justify-center gap-4 text-xs md:text-sm text-gray-600">
+            <div class="flex items-center gap-2 bg-white/50 px-4 py-2 rounded-full">
+              <span>📦</span>
+              <span class="font-medium">First come, first served</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white/50 px-4 py-2 rounded-full">
+              <span>💷</span>
+              <span class="font-medium">Great prices</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white/50 px-4 py-2 rounded-full">
+              <span>📍</span>
+              <span class="font-medium">Collection in London</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Separador con título de sección -->
+    <div class="mb-8">
+      <div class="flex items-center gap-4">
+        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-orange-300 to-transparent"></div>
+        <h2 class="text-xl md:text-2xl font-bold text-gray-800 px-4">
+          Available Items
+        </h2>
+        <div class="h-px flex-1 bg-gradient-to-r from-transparent via-orange-300 to-transparent"></div>
+      </div>
+    </div>
+
+    <!-- Grid de items -->
     <Items />
+
+    <!-- Footer emotivo -->
+    <div class="mt-12 text-center py-8 bg-gradient-to-r from-orange-50 to-rose-50 rounded-xl border border-orange-100">
+      <p class="text-gray-700 text-base md:text-lg mb-2">
+        Thank you for being part of our London journey
+      </p>
+      <p class="text-3xl">❤️🇬🇧</p>
+    </div>
   </main>
 </BaseLayout>
+
+<style>
+  @keyframes bounce-slow {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .animate-bounce-slow {
+    animation: bounce-slow 3s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  .animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+</style>

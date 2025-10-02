@@ -2,63 +2,121 @@
 import { Image } from 'astro:assets'
 import { getCollection } from 'astro:content'
 
+
 const items = await getCollection('items')
 const enabledItems = items.filter((item) => item.data.enabled)
 ---
 
-<div
-  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2"
->
-  {
-    enabledItems.reverse().map((item) => (
-      <a
-        href={`/${item.id}`}
-        class="group transition-all  md:block shadow-lg px-2 py-2 rounded-xl bg-white flex gap-4"
-      >
-        {item.data.image ? (
-          <Image
-            src={item.data.image}
-            alt={item.data.name}
-            width={480}
-            height={270}
-          style={{
-            viewTransitionName: `image-transition-${item.id}`,
-          }}
-          class:list={[
-            'rounded-lg transition-all',
-            'group-hover:shadow-lg group-hover:opacity-90',
-            'md:h-[300px] md:w-full ',
-            'w-1/2 h-[150px] object-cover object-center  ',
-
-          ]}
-        />
-        ) : (
-          <div
-            class="rounded-lg transition-all group-hover:shadow-lg group-hover:opacity-90 md:h-[300px] md:w-full w-1/2 h-[150px] object-cover object-center"
-          >
-            <div class="flex items-center justify-center h-full w-full">
-              <span class="text-gray-500">No image available</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+  {enabledItems.reverse().map((item) => (
+    <a
+      href={`/${item.id}`}
+      class="group transition-all shadow-lg px-2 py-2 rounded-xl bg-white flex md:flex-col gap-4"
+    >
+      <div class="md:w-full w-1/2 h-[150px] md:h-[300px] relative">
+        {item.data.image && item.data.image.length > 0 ? (
+          <div class="swiper h-full rounded-lg overflow-hidden" data-item-id={item.id}>
+            <div class="swiper-wrapper">
+              {item.data.image.map((img, idx) => (
+                <div class="swiper-slide">
+                  <Image
+                    src={img}
+                    alt={`${item.data.name} - ${idx + 1}`}
+                    width={480}
+                    height={270}
+                    class="w-full h-full object-contain transition-all group-hover:opacity-90"
+                    style={idx === 0 ? { viewTransitionName: `image-transition-${item.id}` } : {}}
+                  />
+                </div>
+              ))}
             </div>
+            {item.data.image.length > 1 && (
+              <>
+                <div class="swiper-button-prev" />
+                <div class="swiper-button-next" />
+                <div class="swiper-pagination" />
+              </>
+            )}
+          </div>
+        ) : (
+          <div class="flex items-center justify-center h-full w-full bg-gray-100 rounded-lg">
+            <span class="text-gray-400 text-sm">No image</span>
           </div>
         )}
-        <div class="md:mt-4 md:text-center text-neutral-700 relative flex flex-col  justify-center text-left">
-          {item.data.interested.length > 0 && (
-            <div class="mt-2 text-sm text-yellow-500 font-semibold absolute top-0 right-0">
-              🔥
-            </div>
-          )}
-          <strong class="font-normal text-red-400">{item.data.name}</strong>
-          <p class="text-sm text-neutral-500">{item.data.description}</p>
-          <p class="mt-2 text-sm font-bold text-neutral-800 ">
-            ${item.data.price }
-          </p>
+        {item.data.interested.length > 0 && (
+          <div class="absolute top-2 right-2 text-xl z-10">🔥</div>
+        )}
+      </div>
 
-          {/* Mostrar "Vendido" si el producto está vendido */}
-          {!item.data.enabled && (
-            <div class="mt-2 text-sm text-red-600 font-semibold">Vendido</div>
-          )}
-        </div>
-      </a>
-    ))
-  }
+      <div class="flex-1 flex flex-col justify-center md:mt-4 md:text-center text-left">
+        <strong class="font-normal text-red-400">{item.data.name}</strong>
+        <p class="text-sm text-neutral-500 line-clamp-2">{item.data.description}</p>
+        <p class="mt-2 text-sm font-bold text-neutral-800">${item.data.price}</p>
+        {!item.data.enabled && (
+          <div class="mt-2 text-sm text-red-600 font-semibold">Vendido</div>
+        )}
+      </div>
+    </a>
+  ))}
 </div>
+
+<script>
+  import Swiper from 'swiper'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import { Navigation, Pagination } from 'swiper/modules'
+
+  let swiperInstances: Swiper[] = [];
+
+  function initSwipers() {
+    // Destruir instancias anteriores
+    swiperInstances.forEach(instance => {
+      instance.destroy(true, true);
+    });
+    swiperInstances = [];
+
+    // Crear nuevas instancias
+    document.querySelectorAll('.swiper').forEach((el) => {
+      const instance = new Swiper(el as HTMLElement, {
+        modules: [Navigation, Pagination],
+        loop: true,
+        pagination: { 
+          el: el.querySelector('.swiper-pagination') as HTMLElement, 
+          clickable: true 
+        },
+        navigation: { 
+          nextEl: el.querySelector('.swiper-button-next') as HTMLElement, 
+          prevEl: el.querySelector('.swiper-button-prev') as HTMLElement
+        },
+      });
+      swiperInstances.push(instance);
+    });
+  }
+
+  // Inicializar
+  initSwipers();
+
+  // Reinicializar después de cada navegación
+  document.addEventListener('astro:page-load', () => {
+    initSwipers();
+  });
+</script>
+
+<style>
+  .swiper-button-prev, 
+  .swiper-button-next {
+    @apply text-red-400 scale-75 group-hover:opacity-100 transition-opacity;
+  }
+  
+  .swiper-pagination {
+    @apply opacity-0 group-hover:opacity-100 transition-opacity;
+  }
+  
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>
