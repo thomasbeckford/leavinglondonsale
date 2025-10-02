@@ -11,7 +11,7 @@ export default function BackButton() {
       }}
     >
       <ArrowLeftIcon className="w-4 h-4" />
-      Back
+      Back to items
     </Button>
   )
 }

@@ -4,15 +4,30 @@ import { Button } from '@/components/ui/button'
 import { Image } from 'astro:assets'
 
 const { item } = Astro.props
+
+// Encodear el mensaje para URLs
+const message = `Hello! I'm interested in *${item.data.name}* (£${item.data.price})`
+const whatsappUrl = `https://wa.me/447459053603?text=${encodeURIComponent(message)}`
 ---
 
+
 <a
-  href={`https://api.whatsapp.com/send/?phone=447459053603&text=Hello, I am interested in this item: ${item.data.name}`}
+  href={whatsappUrl}
   target="_blank"
   rel="noopener noreferrer"
+  class="inline-block"
 >
-  <Button size="lg">
-    <Image src={Whatsapp} alt="Whatsapp" width={20} height={20} />
-    <span class="text-[18px]"> I'm Interested </span>
+  <Button 
+    size="lg" 
+    className="bg-green-500 hover:bg-green-600 active:bg-green-700 rounded-lg text-white shadow-lg hover:shadow-xl transition-all duration-200 flex items-center gap-2 px-6 py-3"
+  >
+    <Image 
+      src={Whatsapp} 
+      alt="WhatsApp icon" 
+      width={24} 
+      height={24}
+      class="shrink-0"
+    />
+    <span class="text-lg font-medium">I'm Interested</span>
   </Button>
 </a>

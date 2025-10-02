@@ -21,15 +21,20 @@ const { item } = Astro.props
   title={`${item.data.name} - Leaving London Sale`}
   description={`${item.data.description} - Leaving London Sale`}
 >
-  <div
-    class="flex flex-col items-center px-6 py-8 sm:px-8 sm:py-12 lg:px-16 lg:py-20 gap-2"
-  >
-    <div class="flex flex-col items-center">
-      <h1
-        class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-red-400 mb-4"
-      >
-        {item.data.name}
-      </h1>
+<div
+  class="max-w-7xl mx-auto flex flex-col items-center px-6  sm:px-8  gap-2"
+>
+  <!-- Botón fijo en la esquina superior izquierda -->
+  <div class="sticky top-4 self-start z-50 mb-4">
+    <BackButton client:load />
+  </div>
+
+  <div class="flex flex-col items-center">
+    <h1
+      class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-red-400 mb-4"
+    >
+      {item.data.name}
+    </h1>
       <p
         class="text-lg sm:text-xl lg:text-2xl text-gray-600 max-w-3xl text-center mb-8"
       >
@@ -79,7 +84,7 @@ const { item } = Astro.props
       </div>
     )}
     
-    <BackButton client:load />
+    
   </div>
 </BaseLayout>
 
