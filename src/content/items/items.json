@@ -361,7 +361,7 @@
   {
     "id": 29,
     "name": "Fans (floor/desk)",
-    "price": 0,
+    "price": 10,
     "description": "Assorted fans",
     "image": [
       "/src/assets/items/floor_fan.jpg",
@@ -457,8 +457,8 @@
   {
     "id": 37,
     "name": "Tortilla Press",
-    "price": 0,
-    "description": "Royalford Mexican Style Tortilla & Taco Press, 18.5cm",
+    "price": 10,
+    "description": "Royalford Mexican Style Tortilla & Taco Press, 18.5cm, ideal for empanada dough",
     "image": ["/src/assets/items/tortilla_and_tacos.jpg"],
     "enabled": true,
     "owner": null,
