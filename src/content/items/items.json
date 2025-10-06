@@ -137,7 +137,7 @@
     "price": 70,
     "description": "",
     "image": ["/src/assets/items/joie_car_seat.jpg"],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -147,7 +147,7 @@
     "price": 70,
     "description": "",
     "image": ["/src/assets/items/car_seat.jpg"],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -281,7 +281,7 @@
       "/src/assets/items/climber_slide.jpg",
       "/src/assets/items/climber_slide_1.jpg"
     ],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -417,7 +417,7 @@
     "price": 15,
     "description": "Bosch DesignLine Plus Stainless Steel Kettle, 1.7L, 3000W",
     "image": ["/src/assets/items/kettle.jpg"],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -450,7 +450,7 @@
     "price": 30,
     "description": "Aluminium Stovetop Coffee Maker (9 Cup), 420ml, Silver",
     "image": ["/src/assets/items/coffee_maker.jpg"],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },

@@ -15,6 +15,16 @@ export async function getStaticPaths() {
 }
 
 const { item } = Astro.props
+
+function getPrice(price: number) {
+
+  if(price === 0) {
+    return 'FREE'
+  }
+
+  return `$${price}`
+}
+
 ---
 
 <BaseLayout
@@ -44,7 +54,7 @@ const { item } = Astro.props
       <p
         class="text-lg sm:text-xl lg:text-2xl font-bold text-gray-600 max-w-3xl text-center mb-8"
       >
-        ${item.data.price}
+        {getPrice(item.data.price)}
       </p>
 
       <div>
