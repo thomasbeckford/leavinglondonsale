@@ -93,7 +93,7 @@
       "/src/assets/items/bike_tools_1.jpg",
       "/src/assets/items/bike_tools_2.jpg"
     ],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -294,7 +294,7 @@
       "/src/assets/items/bouncer.jpg",
       "/src/assets/items/bouncer_1.jpg"
     ],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -344,7 +344,7 @@
     "price": 0,
     "description": "Vital Baby HYGIENE Odour-Trap Nappy Disposal System",
     "image": ["/src/assets/items/nappy_bin.jpg"],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -354,7 +354,7 @@
     "price": 0,
     "description": "Nuby Newborn Baby Bath with Anti-Slip Support & Plug",
     "image": ["/src/assets/items/nb_bath.jpg"],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
