@@ -103,7 +103,7 @@
     "price": 50,
     "description": "Bike seat + rack",
     "image": ["/src/assets/items/toddler_bike_seat.jpg"],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -117,7 +117,7 @@
       "/src/assets/items/bike_rack_1.jpg",
       "/src/assets/items/bike_rack_2.jpg"
     ],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -221,7 +221,7 @@
       "/src/assets/items/sofa_2.jpg",
       "/src/assets/items/sofa_3.jpg"
     ],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -268,7 +268,7 @@
     "price": 25,
     "description": "Homcomodar Boho Rug Living Room 160x230cm Distressed Washable",
     "image": ["/src/assets/items/carpet.jpg"],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -334,7 +334,7 @@
       "/src/assets/items/chest_of_drawers.jpg",
       "/src/assets/items/chest_of_drawers_1.jpg"
     ],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -367,7 +367,7 @@
       "/src/assets/items/floor_fan.jpg",
       "/src/assets/items/desk_fan.jpg"
     ],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -377,7 +377,7 @@
     "price": 0,
     "description": "Single table lamp",
     "image": ["/src/assets/items/table_lamp.jpg"],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -440,7 +440,7 @@
     "price": 10,
     "description": "Bonsenkitchen Filter Coffee Machine, 1.5L, programmable",
     "image": ["/src/assets/items/coffee_machine.jpg"],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -460,7 +460,7 @@
     "price": 10,
     "description": "Royalford Mexican Style Tortilla & Taco Press, 18.5cm, ideal for empanada dough",
     "image": ["/src/assets/items/tortilla_and_tacos.jpg"],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -473,7 +473,7 @@
       "/src/assets/items/foldable_desk.jpg",
       "/src/assets/items/foldable_desk_1.jpg"
     ],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -483,7 +483,7 @@
     "price": 0,
     "description": "3 tier laundry rack, 52x48x130 cm",
     "image": ["/src/assets/items/laundry_rack.jpg"],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
