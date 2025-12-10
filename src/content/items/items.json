@@ -1,11 +1,96 @@
 [
   {
+    "id": 4,
+    "name": "Baby Cot Anna - John Lewis",
+    "price": 30,
+    "description": "White cot with mattress, protector & sheet. H93.5cm x W124cm x D65cm. Mattress 120x60cm",
+    "image": ["/src/assets/items/cot.jpg"],
+    "enabled": true,
+    "owner": null,
+    "interested": []
+  },
+  {
+    "id": 13,
+    "name": "Skip Hop Playmat",
+    "price": 25,
+    "description": "Reversible baby playmat – 132.08 x 218.44 cm",
+    "image": [
+      "/src/assets/items/baby_mat.jpg",
+      "/src/assets/items/baby_mat_1.jpg"
+    ],
+    "enabled": true,
+    "owner": null,
+    "interested": []
+  },
+  {
+    "id": 32,
+    "name": "COSORI Air Fryer 4.7L",
+    "price": 25,
+    "description": "9-in-1 compact air fryer, 4 portions, 1500W",
+    "image": ["/src/assets/items/air_fryer.jpg"],
+    "enabled": true,
+    "owner": null,
+    "interested": []
+  },
+  {
+    "id": 6,
+    "name": "IKEA MALM Single Bed + 2 mattresses",
+    "price": 110,
+    "description": "Bed 199x107cm, mattress 190x90cm, headboard 100cm",
+    "image": [
+      "/src/assets/items/bed_single_2.jpg",
+      "/src/assets/items/bed_single.jpg",
+      "/src/assets/items/bed_single_1.jpg"
+    ],
+    "enabled": true,
+    "owner": null,
+    "interested": []
+  },
+  {
+    "id": 5,
+    "name": "Tutti Bambini CoZee Next to Me Crib",
+    "price": 50,
+    "description": "Bedside crib with stand, foldable, 6 height levels, mattress + 2 sheets, Oak & Charcoal",
+    "image": ["/src/assets/items/next_to_me_cot.jpg"],
+    "enabled": false,
+    "owner": null,
+    "interested": []
+  },
+  {
+    "id": 7,
+    "name": "IKEA BRIMNES Double Bed + John Lewis Mattress",
+    "price": 150,
+    "description": "Bed frame with storage (196x141x47cm) + Classic Collection 1200 Pocket Spring Mattress (Firm, 190x135cm)",
+    "image": [
+      "/src/assets/items/double_bed.jpg",
+      "/src/assets/items/double_bed_1.jpg",
+      "/src/assets/items/double_bed_2.jpg"
+    ],
+    "enabled": true,
+    "owner": null,
+    "interested": []
+  },
+  {
+    "id": 24,
+    "name": "Lifetime Picnic Table",
+    "price": 60,
+    "description": "Outdoor foldable table, seats 8, steel frame, all-weather finish",
+    "image": [
+      "/src/assets/items/outdoor_foldable_table.jpg",
+      "/src/assets/items/outdoor_foldable_table_1.jpg",
+      "/src/assets/items/outdoor_foldable_table_2.jpg"
+    ],
+    "enabled": true,
+    "owner": null,
+    "interested": []
+  },
+  {
     "id": 1,
     "name": "TV Samsung TU7020 55\"",
     "price": 250,
     "description": "Crystal UHD 4K HDR Smart TV (2020) – 123.19 x 70.82 cm",
     "image": ["/src/assets/items/tv.jpg"],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -18,7 +103,7 @@
       "/src/assets/items/shoe_cabinet.jpg",
       "/src/assets/items/shoe_cabinet_1.jpg"
     ],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -31,55 +116,7 @@
       "/src/assets/items/shoe_rack.jpg",
       "/src/assets/items/shoe_rack_1.jpg"
     ],
-    "enabled": true,
-    "owner": null,
-    "interested": []
-  },
-  {
-    "id": 4,
-    "name": "Baby Cot Anna - John Lewis",
-    "price": 50,
-    "description": "White cot with mattress, protector & sheet. H93.5cm x W124cm x D65cm. Mattress 120x60cm",
-    "image": ["/src/assets/items/cot.jpg"],
-    "enabled": true,
-    "owner": null,
-    "interested": []
-  },
-  {
-    "id": 5,
-    "name": "Tutti Bambini CoZee Next to Me Crib",
-    "price": 75,
-    "description": "Bedside crib with stand, foldable, 6 height levels, mattress + 2 sheets, Oak & Charcoal",
-    "image": ["/src/assets/items/next_to_me_cot.jpg"],
-    "enabled": true,
-    "owner": null,
-    "interested": []
-  },
-  {
-    "id": 6,
-    "name": "IKEA MALM Single Bed + 2 mattresses",
-    "price": 150,
-    "description": "Bed 199x107cm, mattress 190x90cm, headboard 100cm",
-    "image": [
-      "/src/assets/items/bed_single.jpg",
-      "/src/assets/items/bed_single_1.jpg",
-      "/src/assets/items/bed_single_2.jpg"
-    ],
-    "enabled": true,
-    "owner": null,
-    "interested": []
-  },
-  {
-    "id": 7,
-    "name": "IKEA BRIMNES Double Bed + John Lewis Mattress",
-    "price": 200,
-    "description": "Bed frame with storage (196x141x47cm) + Classic Collection 1200 Pocket Spring Mattress (Firm, 190x135cm)",
-    "image": [
-      "/src/assets/items/double_bed.jpg",
-      "/src/assets/items/double_bed_1.jpg",
-      "/src/assets/items/double_bed_2.jpg"
-    ],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -127,7 +164,7 @@
     "price": 70,
     "description": "Aluminium/carbon road bike 50cm – for riders 157-164 cm",
     "image": ["/src/assets/items/bike.jpg"],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -157,20 +194,7 @@
     "price": 15,
     "description": "BABADU 100FT Expandable Garden Hose Pipe with 7 Function Spray Nozzle",
     "image": ["/src/assets/items/garden_hose_pipe.jpg"],
-    "enabled": true,
-    "owner": null,
-    "interested": []
-  },
-  {
-    "id": 13,
-    "name": "Skip Hop Playmat",
-    "price": 45,
-    "description": "Reversible baby playmat – 132.08 x 218.44 cm",
-    "image": [
-      "/src/assets/items/baby_mat.jpg",
-      "/src/assets/items/baby_mat_1.jpg"
-    ],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -180,7 +204,7 @@
     "price": 65,
     "description": "Upright vacuum cleaner, 820W, 1.5L, 31 x 30.5 x 110 cm, 4.9 kg, purple",
     "image": ["/src/assets/items/vaccum_cleaner.jpg"],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -193,7 +217,7 @@
       "/src/assets/items/tv_stand.jpg",
       "/src/assets/items/tv_stand_1.jpg"
     ],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -206,7 +230,7 @@
       "/src/assets/items/coffee_table.jpg",
       "/src/assets/items/coffee_table_1.jpg"
     ],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -231,7 +255,7 @@
     "price": 20,
     "description": "Anthracite black floor/reading lamp, height 170 cm",
     "image": ["/src/assets/items/standing_lamp.jpg"],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -244,7 +268,7 @@
       "/src/assets/items/parasol_with_base.jpg",
       "/src/assets/items/parasol_with_base_1.jpg"
     ],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -258,7 +282,7 @@
       "/src/assets/items/table_and_chairs_1.jpg",
       "/src/assets/items/table_and_chairs_2.jpg"
     ],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -299,20 +323,6 @@
     "interested": []
   },
   {
-    "id": 24,
-    "name": "Lifetime Picnic Table",
-    "price": 100,
-    "description": "Outdoor foldable table, seats 8, steel frame, all-weather finish",
-    "image": [
-      "/src/assets/items/outdoor_foldable_table.jpg",
-      "/src/assets/items/outdoor_foldable_table_1.jpg",
-      "/src/assets/items/outdoor_foldable_table_2.jpg"
-    ],
-    "enabled": true,
-    "owner": null,
-    "interested": []
-  },
-  {
     "id": 25,
     "name": "2 Bedside tables + 2 lamps",
     "price": 40,
@@ -321,7 +331,7 @@
       "/src/assets/items/two_bedside_tables.jpg",
       "/src/assets/items/two_table_lamps.jpg"
     ],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -387,17 +397,7 @@
     "price": 0,
     "description": "10-Tier Metal Shoe Storage Organiser, 30 x 45 x 174 cm",
     "image": ["/src/assets/items/show_rack_plastic.jpg"],
-    "enabled": true,
-    "owner": null,
-    "interested": []
-  },
-  {
-    "id": 32,
-    "name": "COSORI Air Fryer 4.7L",
-    "price": 40,
-    "description": "9-in-1 compact air fryer, 4 portions, 1500W",
-    "image": ["/src/assets/items/air_fryer.jpg"],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -407,7 +407,7 @@
     "price": 10,
     "description": "Breville Bold 2 Slice Toaster with High-Lift & Wide Slots",
     "image": ["/src/assets/items/toaster.jpg"],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -430,7 +430,7 @@
       "/src/assets/items/iron.jpg",
       "/src/assets/items/ironing_board.jpg"
     ],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   },
@@ -497,7 +497,7 @@
       "/src/assets/items/door_mats_1.jpg",
       "/src/assets/items/door_mats_2.jpg"
     ],
-    "enabled": true,
+    "enabled": false,
     "owner": null,
     "interested": []
   }
